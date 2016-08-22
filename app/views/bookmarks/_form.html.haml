@@ -21,7 +21,7 @@
     .row
       .col-md-3
         %p(v-if="image")
-          %img("v-bind:src" => "image", :width => "100%")
+          %img{"v-bind:src" => "image", :width => "100%"}
         =f.hidden_field :image, "v-model": "image"
 
       .col-md-9

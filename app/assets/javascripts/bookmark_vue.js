@@ -27,7 +27,7 @@ function loadBookmarkVue(){
 						_this.paragraph = data.paragraph;
 						_this.error = null;
 					}).fail(function(data){
-						_this.error = "Oops! something went wrong.";
+						_this.error = "Oops! Can't automatically reach resources.";
 					});
 				}
 			}
