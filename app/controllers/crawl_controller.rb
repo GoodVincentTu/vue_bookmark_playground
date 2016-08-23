@@ -7,7 +7,7 @@ class CrawlController < ApplicationController
 		title =     document.css("title").first.text
 		image =     document.css("img").first.attr("src") rescue nil
 		paragraph = document.css("p").first.text rescue nil
-		binding.pry
+
 		image.insert(0, "http://#{hostname}") unless image =~ /^http(s)?/ || nil
 
 		render json: {

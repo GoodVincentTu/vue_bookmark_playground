@@ -18,7 +18,7 @@
             %strong
               = bookmark.title
           %p.text-muted
-             =bookmark.paragraph
+            =bookmark.paragraph
         %td
           %p.input-group
             = text_field_tag "", visit_url(bookmark.slug), id: "bookmark-#{bookmark.id}", class: "form-control"
